@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* Add specific styling for about-content */
+.about-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto; /* Center the content within the available space */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #ffd700;
+}
+
+/* Responsive navigation styles */
+nav ul.show {
+    display: block;
+}
+
+#toggle-button {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    #toggle-button {
+        display: block;
+    }
+    /* Add styles for the project section */
+#projects {
+    background-color: #fff; /* Set a background color for the projects section */
+    padding: 100px 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: 48%; /* Adjust the width of each project item */
+    margin-bottom: 20px;
+}
+
+.project-item img {
+    max-width: 100%; /* Limit the maximum width to the container width */
+    height: auto;    /* Maintain the aspect ratio */
+    max-height: 200px; /* Set a maximum height for the images */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+}
+
+.project-item  {
+    text-decoration: none;
+    color: #333;
+}
+
+.project-item  {
+    margin-top: 10px;
+}
+
+

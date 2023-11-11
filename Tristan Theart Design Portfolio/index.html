@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Graphic Design Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 100px 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2,
+        section p {
+            color: #000; /* Change text color to black */
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0; /* Hide initially */
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        section.active h2,
+        section.active p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            display: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        #back-to-top:hover {
+            background-color: #555;
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        #home {
+            position: relative;
+            background-image: url('images/background-image.png');
+            background-size: cover;
+            background-position: center;
+            color: #000; /* Change text color */
+            text-align: center;
+            padding: 200px 20px;
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+       /* Opaque square behind #home */
+        /*
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); 
+        }
+        */
+
+        #home h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        #home p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        #home button {
+            background-color: #ffd700;
+            color: #333;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #home button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Graphic Design Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="active">
+        <h2>Welcome to My Portfolio</h2>
+        <p>My name is Tristan Theart and this modern and minimalistic website is the culmination of my experience as a designer, web developer et al.<br><br/>
+            Join me as I showcase everything I have to offer, and let's explore the exciting milestones and creations together.
+            <p>Come be a part of the immersive experience – your presence is the missing piece that will make this journey complete!</p></p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-item">
+                <a href="images/Hanlie%20Botes%20Klein.png" target="_blank">Banner Ad</a>
+            </div>
+            <div class="project-item">
+                <a href="images/Medkem%20Groot.png" target="_blank">Banner Ad</a>
+            </div>
+            <div class="project-item">
+                <a href="images/biolink%20pamphlet.png" target="_blank">Pamphlet</a>
+            </div>
+            <div class="project-item">
+                <a href="images/Neo%20Design%20Klein.png" target="_blank">Banner Ad</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Commencing my exploration into the realm of graphic design during my high school years, I undertook a self-taught journey driven by an early fascination with technology and design. To formalize and enhance my skills, I successfully completed an Adobe and CIW certified Graphic Design Essentials course in 2020. This educational milestone significantly broadened my artistic horizons, providing exposure to various traditional and visual art forms.
+            </p>
+            <p>
+                During the course, I actively contributed to my school newspaper by developing advertisements, offering valuable insights into the methodical aspects of design. This experience not only refined my skills but also instilled a disciplined approach to the creative process.
+            </p>
+            <p>
+                Post-course completion, I transitioned into practical application, accumulating hands-on experience in diverse roles as a designer. Notable contributions include providing design support to my local municipality and serving as a social media content creator for esports in South Africa. These engagements spanned both public and private organizations, enriching my professional repertoire.
+            </p>
+            <p>
+                My creative focus has been on continuous experimentation with various art styles, emphasizing rapid communication, advertising, and digital illustration. This strategic emphasis aligns with my commitment to staying at the forefront of design trends and effectively communicating messages through visual mediums.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>This is a placeholder for a contact form or contact information. You can include a form for visitors to reach out to you or provide your email and social media links.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Graphic Design Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <button id="back-to-top" title="Go to top">&#8679;</button>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+        const options = {
+            threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Show/hide back-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        document.getElementById('back-to-top').addEventListener('click', function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+</html>
